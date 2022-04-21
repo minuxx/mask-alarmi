@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/NoActionBar">
 
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="@string/naver_map_client_id" />
+
         <activity
             android:name=".presentation.splash.SplashActivity"
             android:theme="@style/SplashTheme"

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import com.minux.mask_alarmi.R
 import com.minux.mask_alarmi.core.BaseFragment
+import com.minux.mask_alarmi.core.util.MaskAlarmiAnimation
 import com.minux.mask_alarmi.databinding.FragmentMapBinding
 import com.naver.maps.map.NaverMap
 import com.naver.maps.map.OnMapReadyCallback
@@ -17,6 +18,16 @@ class MapFragment : BaseFragment<FragmentMapBinding>(R.layout.fragment_map), OnM
 
     override fun initAfterBinding() {
         binding.mapAnnounceTv.isSelected = true
+        binding.mapSearchIbtn.setOnClickListener{
+            binding.mapSearchIbtn.visibility = View.INVISIBLE
+//            binding.mapSearchEt.visibility = View.VISIBLE
+
+            MaskAlarmiAnimation.expandHorizontally(binding.mapSearchEt)
+        }
+        binding.mapMaskAmountIv.setOnClickListener{
+            MaskAlarmiAnimation.collapseHorizontally(binding.mapSearchEt)
+            binding.mapSearchIbtn.visibility = View.VISIBLE
+        }
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

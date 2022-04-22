@@ -9,24 +9,26 @@
     <string name="main_permission_denied">퍼미션이 거부되었습니다. 앱을 다시 실행하여 퍼미션을 허용해주세요.</string>
     <string name="main_permission_request_app_setting">퍼미션이 거부되었습니다. 앱 설정에서 퍼미션을 허용해야 합니다.</string>
     <string name="main_permission_request_location_auth">이 앱을 실행하려면 위치 접근 권한이 필요합니다.</string>
-    <string name="main_announce_mention">3월 14일까지는 서비스의 안정적 운영을 지켜보기 위한 베타서비스 기간입니다.</string>
-    <string name="main_possible_all">주중에 구매하지 못했다면 오늘 구매하세요!</string>
-    <string name="main_ready_bookmark">기능 준비중입니다.</string>
-    <string name="main_ready_findwaying">기능 준비중입니다.</string>
-    <string name="main_update">업데이트</string>
-    <string name="main_stock_at">입고시간</string>
-    <string name="main_search_hint">지역(동 또는 주소)을 입력해주세요</string>
-    <string name="main_search_fail">검색결과가 존재하지 않습니다</string>
-    
-    <string name="main_cd_ic_announce">ic_announce</string>
-    <string name="main_cd_ic_img_mask_amount">img_mask_amount</string>
-    <string name="main_cd_ic_mylocation">ic_mylocation</string>
-    <string name="main_cd_ic_search">ic_search</string>
-    <string name="main_cd_ic_refresh">ic_refresh</string>
-    <string name="main_cd_ic_wayfinding">ic_wayfinding</string>
-    <string name="main_cd_ic_share">ic_share</string>
-    <string name="main_cd_ic_mask_state">ic_mask_state</string>
-    <string name="main_cd_logo_w">logo_w</string>
+
+    <!-- Map -->
+    <string name="map_announce_mention">3월 14일까지는 서비스의 안정적 운영을 지켜보기 위한 베타서비스 기간입니다.</string>
+    <string name="map_possible_all">주중에 구매하지 못했다면 오늘 구매하세요!</string>
+    <string name="map_ready_bookmark">기능 준비중입니다.</string>
+    <string name="map_ready_findwaying">기능 준비중입니다.</string>
+    <string name="map_update">업데이트</string>
+    <string name="map_stock_at">입고시간</string>
+    <string name="map_search_hint">지역(동 또는 주소)을 입력해주세요</string>
+    <string name="map_search_fail">검색결과가 존재하지 않습니다</string>
+
+    <string name="map_cd_ic_announce">ic_announce</string>
+    <string name="map_cd_ic_img_mask_amount">img_mask_amount</string>
+    <string name="map_cd_ic_mylocation">ic_mylocation</string>
+    <string name="map_cd_ic_search">ic_search</string>
+    <string name="map_cd_ic_refresh">ic_refresh</string>
+    <string name="map_cd_ic_wayfinding">ic_wayfinding</string>
+    <string name="map_cd_ic_share">ic_share</string>
+    <string name="map_cd_ic_mask_state">ic_mask_state</string>
+    <string name="map_cd_logo_w">logo_w</string>
 
     <!--Announce-->
     <string name="announce_announce">공지사항</string>

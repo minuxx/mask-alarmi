@@ -16,7 +16,7 @@ class MapFragment : BaseFragment<FragmentMapBinding>(R.layout.fragment_map), OnM
     }
 
     override fun initAfterBinding() {
-
+        binding.mapAnnounceTv.isSelected = true
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

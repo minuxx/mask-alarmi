@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -8,11 +9,127 @@
 
         <com.naver.maps.map.MapView
             android:id="@+id/map_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@+id/map_announce_tv" />
+
+        <TextView
+            android:id="@+id/map_announce_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/mapAnnounceBar"
+            android:drawablePadding="10dp"
+            android:ellipsize="marquee"
+            android:fontFamily="@font/notosanskr_regular"
+            android:gravity="center_vertical"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:singleLine="true"
+            android:text="@string/map_announce_mention"
+            android:textColor="@color/mapAnnounceText"
+            android:textSize="14sp"
+            app:drawableStartCompat="@drawable/ic_announcement"
+            app:layout_constraintBottom_toTopOf="@+id/map_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/map_possible_day_tv"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/mapPossibleDayBg"
+            android:elevation="3dp"
+            android:fontFamily="@font/notosanskr_regular"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/mapPossibleDayText"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:drawableEndCompat="@drawable/ic_etc"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/map_announce_tv"
+            tools:text="오늘은 출생연도 끝자리 3 ・8년생이 살 수 있어요!" />
+
+        <ImageView
+            android:id="@+id/map_mask_amount_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/map_cd_ic_img_mask_amount"
+            android:src="@drawable/img_mask_amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/map_possible_day_tv" />
+
+        <ImageButton
+            android:id="@+id/map_my_location_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/map_cd_ic_mylocation"
+            android:src="@drawable/ic_mylocation"
+            app:layout_constraintBottom_toTopOf="@+id/map_search_ibtn"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/map_search_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="25dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/map_cd_ic_search"
+            android:src="@drawable/ic_search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/map_search_et"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="25dp"
+            android:autofillHints="@string/map_search_hint"
+            android:background="@drawable/search_white_round_box"
+            android:drawableEnd="@drawable/ic_search_clicked"
+            android:elevation="1dp"
+            android:fontFamily="@font/notosanskr_medium"
+            android:gravity="center_vertical"
+            android:hint="@string/map_search_hint"
+            android:imeOptions="actionSearch"
+            android:inputType="textVisiblePassword|textNoSuggestions"
+            android:maxLines="1"
+            android:paddingStart="16dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/mapSearchText"
+            android:textColorHint="@color/mapSearchHint"
+            android:textCursorDrawable="@drawable/search_cursor"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/map_reload_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="25dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/map_cd_ic_refresh"
+            android:src="@drawable/ic_refresh"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

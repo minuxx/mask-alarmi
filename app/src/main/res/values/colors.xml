@@ -9,20 +9,21 @@
     <color name="splashBackground">#4c85f7</color>
 
     <!--Main-->
-    <color name="mainNoticeBar">#4c85f7</color>
-    <color name="mainAnnounceText">#FFFFFF</color>
-    <color name="mainPossibleDayBg">#FFFFFF</color>
-    <color name="mainPossibleDayText">#000000</color>
-    <color name="mainPossibleYearText">#0d51d8</color>
-    <color name="mainUpdateAt">#acacac</color>
-    <color name="mainStoreNameText">#000000</color>
-    <color name="mainStoreAddrText">#737373</color>
-    <color name="mainTimeText">#000000</color>
-    <color name="mainStockAt">#acacac</color>
-    <color name="mainStockAtTime">#000000</color>
-    <color name="mainSearchHint">#acacac</color>
-    <color name="mainSearchText">#000000</color>
-    <color name="mainSearchBg">#FFF</color>
+    <color name="mapAnnounceBar">#4c85f7</color>
+    <color name="mapAnnounceText">#FFFFFF</color>
+    <color name="mapPossibleDayBg">#FFFFFF</color>
+    <color name="mapPossibleDayText">#000000</color>
+    <color name="mapPossibleYearText">#0d51d8</color>
+    <color name="mapUpdateAt">#acacac</color>
+    <color name="mapStoreNameText">#000000</color>
+    <color name="mapStoreAddrText">#737373</color>
+    <color name="mapTimeText">#000000</color>
+    <color name="mapStockAt">#acacac</color>
+    <color name="mapStockAtTime">#000000</color>
+    <color name="mapSearchHint">#acacac</color>
+    <color name="mapSearchText">#000000</color>
+    <color name="mapSearchBg">#FFF</color>
+
     <!--Announce-->
     <color name="announceText">#000000</color>
     <color name="announceBackBg">#f0f0f0</color>
